@@ -3,7 +3,6 @@ install: 'bundle install'
 script:
 - export RAILS_ENV=test
 - bundle exec rake db:create db:schema:load db:test:prepare
-- bundle exec rake cucumber
 - bundle exec rspec --require rails_helper
 notifications:
   email: false
